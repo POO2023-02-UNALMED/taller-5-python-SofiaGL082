@@ -22,10 +22,10 @@ class Mamifero(Animal):
     def getPatas(self):
         return self._patas
 
-    def crearCaballo(self, nombre, edad, genero):
-        self._caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
+    def crearCaballo(nombre, edad, genero):
+        caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
         caballos +=1
-        return self._caballo
+        return caballo
     
     def crearLeon(self, nombre, edad, genero):
         leon = Mamifero(nombre, edad, "selva", genero, True, 4)
