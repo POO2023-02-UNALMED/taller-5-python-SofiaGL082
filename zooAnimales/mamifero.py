@@ -23,9 +23,9 @@ class Mamifero(Animal):
         return self._patas
 
     def crearCaballo(self, nombre, edad, genero):
-        caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
+        self._caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
         caballos +=1
-        return caballo
+        return self._caballo
     
     def crearLeon(self, nombre, edad, genero):
         leon = Mamifero(nombre, edad, "selva", genero, True, 4)

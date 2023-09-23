@@ -35,11 +35,11 @@ class Animal:
     def getTotalAnimales(cls):
         return cls._totalAnimales
     
-    def totalPorTipo(self):
+    def totalPorTipo():
         mensaje = "Mamiferos: " + str(Mamifero.cantidadMamiferos()) + "\nAves: " + str(Ave.cantidadAves()) + "\nReptiles: " + str(Reptil.cantidadReptiles()) + "\nPeces: " + str(Pez.cantidadPeces()) + "\nAnfibios: " + str(Anfibio.cantidadAnfibios())
         return mensaje
 
-    def toString(self):
+    def toString():
         if Zona.getZoo() == "None":
             mensaje = "Mi nombre es" + self._nombre + ", tengo una edad de" + str(self._edad) + ", habito en" + self._habitat + "y mi genero es" + self._genero
             return mensaje

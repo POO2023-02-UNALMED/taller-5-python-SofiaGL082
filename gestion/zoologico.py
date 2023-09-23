@@ -18,7 +18,7 @@ class Zoologico:
         return self._ubicacion
 
     @classmethod
-    def cantidadTotalAnimales(self):
+    def cantidadTotalAnimales(cls):
         for i in Zoologico._Zonas:
             Zoologico._sumaAnimalesZonas += len(i)
         return Zoologico._sumaAnimalesZonas
