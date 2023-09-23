@@ -40,7 +40,7 @@ class Animal:
         return mensaje
 
     def toString(self):
-        if Zona.getzoo() == "None":
+        if Zona.getZoo() == "None":
             mensaje = "Mi nombre es" + self._nombre + ", tengo una edad de" + str(self._edad) + ", habito en" + self._habitat + "y mi genero es" + self._genero
             return mensaje
         else:
