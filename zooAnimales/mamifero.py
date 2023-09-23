@@ -7,7 +7,7 @@ class Mamifero(Animal):
     leones = 0
 
     def __init__(self, nombre, edad, habitat, genero, pelaje, patas):
-        super.__init__(nombre, edad, habitat, genero)
+        super().__init__(nombre, edad, habitat, genero)
         self._pelaje = pelaje
         self._patas = patas
         self._listado.append(self)
@@ -23,12 +23,12 @@ class Mamifero(Animal):
         return self._patas
 
     def crearCaballo(self, nombre, edad, genero):
-        caballo = Mamifero(nombre, edad, "pradera", genero, true, 4)
+        caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
         caballos +=1
         return caballo
     
     def crearLeon(self, nombre, edad, genero):
-        leon = Mamifero(nombre, edad, "selva", genero, true, 4)
+        leon = Mamifero(nombre, edad, "selva", genero, True, 4)
         leones += 1
         return leon
     
