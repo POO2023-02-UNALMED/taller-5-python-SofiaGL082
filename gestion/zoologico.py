@@ -3,7 +3,7 @@ class Zoologico:
     _Zonas = []
     _sumaAnimalesZonas = 0
 
-    def__init__(self, nombre, ubicacion):
+    def __init__(self, nombre, ubicacion):
         self._nombre = nombre
         self._ubicacion = ubicacion
 

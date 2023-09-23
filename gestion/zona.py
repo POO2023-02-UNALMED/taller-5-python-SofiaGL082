@@ -2,7 +2,7 @@ class Zona:
 
     _Animales = []
 
-    def__init__(self, nombre, zoo):
+    def __init__(self, nombre, zoo):
         self._nombre = nombre
         self._zoo = zoo
     
