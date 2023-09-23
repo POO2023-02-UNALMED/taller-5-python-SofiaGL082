@@ -19,7 +19,7 @@ class Anfibio(Animal):
     
     def setVenenoso(self, venenoso):
         self._venenoso = venenoso
-    def getVenenoso(self):
+    def isVenenoso(self):
         return self._venenoso
     
     def crearRana(self, nombre, edad, genero):
