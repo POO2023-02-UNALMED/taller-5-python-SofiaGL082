@@ -7,7 +7,7 @@ class Mamifero(Animal):
     leones = 0
 
     def __init__(self, nombre, edad, habitat, genero, pelaje, patas):
-        super._init_(nombre, edad, habitat, genero)
+        super.__init__(nombre, edad, habitat, genero)
         self._pelaje = pelaje
         self._patas = patas
         self._listado.append(self)
