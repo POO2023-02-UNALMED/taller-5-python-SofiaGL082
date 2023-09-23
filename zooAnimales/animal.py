@@ -1,3 +1,5 @@
+from gestion.zona import Zona
+
 class Animal:
 
     _totalAnimales = 0
@@ -38,7 +40,7 @@ class Animal:
         return mensaje
 
     def toString(self):
-        if zoo == "None":
+        if Zona.getzoo() == "None":
             mensaje = "Mi nombre es" + self._nombre + ", tengo una edad de" + str(self._edad) + ", habito en" + self._habitat + "y mi genero es" + self._genero
             return mensaje
         else:
