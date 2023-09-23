@@ -21,7 +21,7 @@ class Ave(Animal):
         halcones += 1
         return halcon
     
-    def crarAguila(self, nombre, edad, genero):
+    def crearAguila(self, nombre, edad, genero):
         aguila = Ave(nombre, edad, "montanas", genero, "blanco y amarillo")
         aguilas += 1
         return aguila

@@ -14,7 +14,7 @@ class Zona:
     def setZoo(self, zoo):
         self._zoo = zoo
     def getZoo(self):
-        self._zoo
+        return self._zoo
     
     def agregarAnimales(self, animal):
         self._Animales.append(animal)

@@ -22,7 +22,6 @@ class Zoologico:
         for i in Zoologico._Zonas:
             Zoologico._sumaAnimalesZonas += len(i)
         return Zoologico._sumaAnimalesZonas
-        #Devuelve la cantidad de animales de todas las zonas
     
     def agregarZonas(self, zona):
         self._Zonas.append(zona)
