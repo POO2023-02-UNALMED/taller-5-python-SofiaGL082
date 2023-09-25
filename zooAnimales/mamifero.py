@@ -10,7 +10,7 @@ class Mamifero(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._pelaje = pelaje
         self._patas = patas
-        self._listado.append(self)
+        Mamifero._listado.append(self)
 
     def setPelaje(self, pelaje):
         self._pelaje = pelaje
@@ -22,18 +22,20 @@ class Mamifero(Animal):
     def getPatas(self):
         return self._patas
 
-    def crearCaballo(nombre, edad, genero):
-        caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
-        Mamifero.caballos +=1
+    @classmethod
+    def crearCaballo(cls, nombre, edad, genero):
+        caballo = cls(nombre, edad, "pradera", genero, True, 4)
+        cls.caballos +=1
         return caballo
     
-    def crearLeon(nombre, edad, genero):
-        leon = Mamifero(nombre, edad, "selva", genero, True, 4)
-        Mamifero.leones += 1
+    @classmethod
+    def crearLeon(cls, nombre, edad, genero):
+        leon = cls(nombre, edad, "selva", genero, True, 4)
+        cls.leones += 1
         return leon
     
-    @classmethod
-    def cantidadMamiferos(cls):
-        return len(cls._listado)
+    @staticmethod
+    def cantidadMamiferos():
+        return len(Mamifero._listado)
 
     

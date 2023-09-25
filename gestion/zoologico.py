@@ -1,7 +1,5 @@
 class Zoologico:
-
-    _Zonas = []
-    _sumaAnimalesZonas = 0
+    _zonas = []
 
     def __init__(self, nombre, ubicacion):
         self._nombre = nombre
@@ -18,10 +16,19 @@ class Zoologico:
         return self._ubicacion
 
     @classmethod
+    def setZonas(cls, zonas):
+        cls._zonas = zonas
+
+    @classmethod
+    def getZonas(cls):
+        return cls._zonas
+
+    @classmethod
     def cantidadTotalAnimales(cls):
-        for i in Zoologico._Zonas:
-            Zoologico._sumaAnimalesZonas += len(i)
-        return Zoologico._sumaAnimalesZonas
+        sumaAnimalesZonas = 0
+        for i in cls._zonas:
+            sumaAnimalesZonas += len(i)
+        return sumaAnimalesZonas
     
     def agregarZonas(self, zona):
         self._Zonas.append(zona)
