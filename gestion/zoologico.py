@@ -31,4 +31,4 @@ class Zoologico:
         return sumaAnimalesZonas
     
     def agregarZonas(self, zona):
-        self._Zonas.append(zona)
+        self._zonas.append(zona)

@@ -50,7 +50,7 @@ class Animal:
     
     @staticmethod
     def totalPorTipo():
-        mensaje = "Mamiferos: " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\nAves: " + str(zooAnimales.ave.Ave.cantidadAves()) + "\nReptiles: " + str(zooAnimales.reptil.Reptil.cantidadReptiles()) + "\nPeces: " + str(zooAnimales.pez.Pez.cantidadPeces()) + "\nAnfibios: " + str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
+        mensaje = "Mamiferos : " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\nAves : " + str(zooAnimales.ave.Ave.cantidadAves()) + "\nReptiles : " + str(zooAnimales.reptil.Reptil.cantidadReptiles()) + "\nPeces : " + str(zooAnimales.pez.Pez.cantidadPeces()) + "\nAnfibios : " + str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
         return mensaje
 
     def toString(self):
