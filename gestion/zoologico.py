@@ -16,11 +16,11 @@ class Zoologico:
         return self._ubicacion
 
     @classmethod
-    def setZonas(cls, zonas):
+    def setZona(cls, zonas):
         cls._zonas = zonas
 
     @classmethod
-    def getZonas(cls):
+    def getZona(cls):
         return cls._zonas
 
     @classmethod
